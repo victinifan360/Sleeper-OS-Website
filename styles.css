@@ -132,28 +132,18 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 
-.community-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
+.sourceforge-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
-.icon {
-    margin: 20px 0;
-}
-
-.community-icons h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.community-icons a {
-    color: #333;
-    transition: color 0.3s;
-}
-
-.community-icons a:hover {
-    color: #0058a3;
+.sourceforge-button:hover {
+    background-color: darkorange;
 }
