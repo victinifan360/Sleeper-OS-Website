@@ -131,12 +131,6 @@ footer {
 .gallery-image:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-.community-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
 
 .community-icons {
     display: flex;
@@ -148,6 +142,11 @@ footer {
 
 .icon {
     margin: 20px 0;
+}
+
+.community-icons h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .community-icons a {
