@@ -138,8 +138,19 @@ footer {
     margin-top: 20px;
 }
 
+.community-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.icon {
+    margin: 20px 0;
+}
+
 .community-icons a {
-    margin: 0 20px;
     color: #333;
     transition: color 0.3s;
 }
