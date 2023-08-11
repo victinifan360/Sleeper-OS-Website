@@ -131,15 +131,3 @@ footer {
 .gallery-image:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-
-.sourceforge-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: orange;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
