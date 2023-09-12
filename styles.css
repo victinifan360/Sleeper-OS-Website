@@ -31,12 +31,6 @@ header {
     nav li {
         margin: 5px 0;
     }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
 
     header {
         padding: 5px 0;
