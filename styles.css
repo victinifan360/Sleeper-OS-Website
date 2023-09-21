@@ -88,13 +88,43 @@ footer {
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Cambiar color y efecto de movimiento lento al pasar el cursor en dispositivos de pantalla grande */
 .feature:hover i {
     color: #ffd700;
     transform: translateY(-2px);
 }
+    .gallery {
+        text-align: center;
+        padding: 50px 0;
+    }
 
-/* Estilos para dispositivos móviles (incluso en pantallas grandes) */
+    .gallery h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .gallery-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .gallery-image {
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 10px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .gallery-image:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -102,7 +132,6 @@ footer {
         padding: 10px;
     }
 
-    /* Reducir el tamaño del logo para dispositivos móviles */
     .logo img {
         height: 30px;
     }
@@ -143,7 +172,6 @@ footer {
         padding: 20px;
     }
 
-    /* Estilos de la galería para dispositivos móviles (incluso en pantallas grandes) */
     .gallery {
         text-align: center;
         padding: 50px 0;
