@@ -33,8 +33,38 @@ nav a {
     color: #fff;
     transition: color 0.3s;
 }
+
 nav a:hover {
     color: #ffd700;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature:hover i {
+    color: #ffd700;
+    transform: translateY(-2px);
+}
+
+@media (hover: none) {
+    nav a:hover,
+    .feature:hover,
+    .feature:hover i,
+    .gallery-image img:hover { 
+        color: initial;
+        transform: initial;
+        box-shadow: initial;
+    }
+    
+    .feature i {
+        transition: color 0.3s;
+    }
+}
+
+img:hover {
+    filter: brightness(100%);
 }
 
 .hero {
@@ -80,7 +110,7 @@ footer {
     font-size: 3rem;
     margin-bottom: 10px;
     color: #0058a3;
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s;
 }
 
 .feature:hover {
@@ -92,38 +122,55 @@ footer {
     color: #ffd700;
     transform: translateY(-2px);
 }
-    .gallery {
-        text-align: center;
-        padding: 50px 0;
-    }
 
-    .gallery h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
+.gallery {
+    text-align: center;
+    padding: 50px 0;
+}
 
-    .gallery-images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 
-    .gallery-image {
-        flex: 0 0 calc(33.33% - 20px);
-        margin: 10px;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-    .gallery-image img {
-        max-width: 100%;
-        height: auto;
+.gallery-image {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.gallery-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (hover: none) {
+    nav a:hover,
+    .feature:hover,
+    .feature:hover i,
+    .gallery-image:hover,
+    .gallery-image img:hover { /* Remove hover effect on images */
+        color: initial;
+        transform: initial;
+        box-shadow: initial;
     }
-    .gallery-image:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    
+    .feature i {
+        transition: color 0.3s;
     }
+}
+
+img:hover {
+    filter: brightness(100%);
+}
 
 @media (max-width: 768px) {
     header {
@@ -200,9 +247,10 @@ footer {
         max-width: 100%;
         height: auto;
     }
+   
     .gallery-image:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        transform: initial;
+        box-shadow: initial;
     }
 }
 
