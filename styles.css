@@ -83,7 +83,6 @@ footer {
     transition: color 0.3s, transform 0.3s;
 }
 
-/* Agregar efecto hover para dispositivos de pantalla grande */
 .feature:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
